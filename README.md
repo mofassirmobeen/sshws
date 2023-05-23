@@ -6,7 +6,8 @@
 </p>
 </div>
 
-# minimal System
+# Required
+- DOMAIN
 - DEBIAN 10 / Ubuntu 20 LTS
 - CPU MIN 1 CORE
 - RAM 1GB
