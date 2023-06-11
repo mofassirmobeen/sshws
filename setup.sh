@@ -1,51 +1,6 @@
 #!/bin/bash
 
 
-BURIQ () {
-    curl -sS https://raw.githubusercontent.com/givpn/izin/master/sshws > /root/tmp
-    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
-    for user in "${data[@]}"
-    do
-    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
-    d1=(`date -d "$exp" +%s`)
-    d2=(`date -d "$biji" +%s`)
-    exp2=$(( (d1 - d2) / 86400 ))
-    if [[ "$exp2" -le "0" ]]; then
-    echo $user > /etc/.$user.ini
-    else
-    rm -f  /etc/.$user.ini > /dev/null 2>&1
-    fi
-    done
-    rm -f  /root/tmp
-}
-MYIP=$(curl -sS 143.110.156.220)
-Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/sshws | grep $MYIP | awk '{print $2}')
-echo $Name > /usr/local/etc/.$Name.ini
-CekOne=$(cat /usr/local/etc/.$Name.ini)
-
-Bloman () {
-if [ -f "/etc/.$Name.ini" ]; then
-CekTwo=$(cat /etc/.$Name.ini)
-    if [ "$CekOne" = "$CekTwo" ]; then
-        res="Expired"
-    fi
-else
-res="Permission Accepted..."
-fi
-}
-
-PERMISSION () {
-    MYIP=$(curl -sS 143.110.156.220)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/sshws | awk '{print $4}' | grep $MYIP)
-    if [ "$MYIP" = "143.110.156.220" ]; then
-    Bloman
-    else
-    res="Permission Denied!"
-    fi
-    BURIQ
-}
-
-clear
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
