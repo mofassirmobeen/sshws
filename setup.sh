@@ -20,7 +20,7 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(curl -sS 143.110.156.220)
 Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/sshws | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
@@ -37,9 +37,9 @@ fi
 }
 
 PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
+    MYIP=$(curl -sS 143.110.156.220)
     IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/sshws | awk '{print $4}' | grep $MYIP)
-    if [ "$MYIP" = "$IZIN" ]; then
+    if [ "$MYIP" = "143.110.156.220" ]; then
     Bloman
     else
     res="Permission Denied!"
