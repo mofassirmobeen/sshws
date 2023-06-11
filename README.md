@@ -51,13 +51,13 @@
   ```
 
 # Telegram
-[![Telegram-chat](https://raw.githubusercontent.com/givpn/telegram-button/main/chat-telegram.png)](https://t.me/givpn/)
-[![Telegram-grup](https://raw.githubusercontent.com/givpn/telegram-button/main/grup-telegram.png)](https://t.me/givpn_grup)
+[![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
+[![Telegram-grup](https://img.shields.io/badge/Grup-Telegram-blue)](https://t.me/givpn_grup)
 
 # Donation Thanks for your support me
-[![Saweria donate button](https://raw.githubusercontent.com/givpn/donation-button/main/saweria.png)](https://saweria.co/givpn11)
-[![PayPal donate button](https://raw.githubusercontent.com/givpn/donation-button/main/paypal.png)](https://paypal.me/givpn11)
-[![Ko-fi donate button](https://raw.githubusercontent.com/givpn/donation-button/main/ko-fi.png)](https://ko-fi.com/givpn11)
+[![Saweria donate button](https://img.shields.io/badge/Donate-Saweria-red)](https://saweria.co/givpn11)
+[![Ko-fi donate button](https://img.shields.io/badge/Donate-Ko--fi-red)](https://ko-fi.com/givpn11)
+[![PayPal donate button](https://img.shields.io/badge/Donate-PayPal-blue)](https://paypal.me/givpn11)
 
 # LICENSE
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
